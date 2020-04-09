@@ -10,7 +10,7 @@
     "daemonType": "default",
     "cnAlgorithm": "cryptonight",
     "cnVariant": 0,
-    "cnBlobType": 1,
+    "cnBlobType": 2,
 
     "logging": {
         "files": {
@@ -37,27 +37,27 @@
         "ports": [
             {
                 "port": 4551,
-                "difficulty": 100,
+                "difficulty": 1000,
                 "desc": "CPU or device"
             },
             {
                 "port": 4552,
-                "difficulty": 1000,
-                "desc": "CPU / GPU"
+                "difficulty": 1000000,
+                "desc": "CPU / GPU / Asic"
             },
             {
                 "port": 4553,
-                "difficulty": 1000000,
-                "desc": "Asic"
+                "difficulty": 4000000,
+                "desc": "Asic 240kh"
             },
             {
                 "port": 4554,
-                "difficulty": 3500000,
-                "desc": "ASIC 240K"
+                "difficulty": 8000000,
+                "desc": "ASIC x3"
             }
         ],
         "varDiff": {
-            "minDiff": 100,
+            "minDiff": 10000,
             "maxDiff": 100000000,
             "targetTime": 30,
             "retargetTime": 60,
@@ -94,23 +94,23 @@
 
     "payments": {
         "enabled": true,
-        "interval": 60,
+        "interval": 300,
         "maxAddresses": 50,
         "mixin": 0,
         "priority": 0,
         "transferFee": 10,
         "dynamicTransferFee": true,
         "minerPayFee" : true,
-        "minPayment": 1000,
-        "maxTransactionAmount": 2000000,
-        "denomination": 100
+        "minPayment": 1000000,
+        "maxTransactionAmount": 100000000,
+        "denomination": 1000
     },
 
     "blockUnlocker": {
         "enabled": true,
         "interval": 30,
         "depth": 10,
-        "poolFee": 1.0,
+        "poolFee": 0.1,
         "devDonation": 0.0,
         "networkFee": 0.0,
         "fixBlockHeightRPC": false
