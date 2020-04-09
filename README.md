@@ -127,6 +127,8 @@ Usage
   
   or use nvm
   wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+  restart terminal
+  nvm install 8.15
 ```
 * [Redis](http://redis.io/) key-value store v2.6+ 
   * For Ubuntu: 
