@@ -124,6 +124,9 @@ Usage
  ```
   curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash
   sudo apt-get install -y nodejs
+  
+  or use nvm
+  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 ```
 * [Redis](http://redis.io/) key-value store v2.6+ 
   * For Ubuntu: 
