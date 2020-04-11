@@ -1,13 +1,9 @@
 cryptonote-nodejs-pool 
 ======================
 Forked from https://github.com/dvandal/cryptonote-nodejs-pool
-modified to work with Dyngecoin.
-modified website_example with links to dyngecoin-stuff
+modified to work with Dyngecoin. http://dyngepeng.zapto.org/Dynge/
 ================================
-
-
 High performance Node.js (with native C addons) mining pool for CryptoNote based coins. Comes with lightweight example front-end script which uses the pool's AJAX API. Support for Cryptonight (Original, Monero v7, Stellite v7), Cryptonight Light (Original, Aeon v7, IPBC) and Cryptonight Heavy (Sumokoin) algorithms.
-
 
 #### Table of Contents
 * [Features](#features)
@@ -28,10 +24,8 @@ High performance Node.js (with native C addons) mining pool for CryptoNote based
 * [Credits](#credits)
 * [License](#license)
 
-
 Features
 ===
-
 #### Optimized pool server
 * TCP (stratum-like) protocol for server-push based jobs
   * Compared to old HTTP protocol, this has a higher hash rate, lower network/CPU server load, lower orphan
@@ -112,6 +106,7 @@ Community / Support
 * https://bytecoin.pt
 * http://ita.minexmr24.ru/
 * https://pool.croatpirineus.cat
+* http://dyngepeng.zapto.org/Dynge/
 
 Usage
 ===
@@ -143,7 +138,6 @@ sudo apt-get install redis-server
 * Boost is required for the cryptoforknote-util module
   * For Ubuntu: `sudo apt-get install libboost-all-dev`
 
-
 ##### Seriously
 Those are legitimate requirements. If you use old versions of Node.js or Redis that may come with your system package manager then you will have problems. Follow the linked instructions to get the last stable versions.
 
@@ -160,14 +154,11 @@ sudo su - your-user
 ```
 
 #### 1) Downloading & Installing
-
-
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
 git clone https://github.com/Tarmgas/dynge-nodejs-pool.git pool
 cd pool
-
 npm update
 ```
 
@@ -612,7 +603,7 @@ node init.js -module=api
 To keep your pool up, on operating system with systemd, you can create add your pool software as a service.  
 Use this [example](https://github.com/dvandal/cryptonote-nodejs-pool/blob/master/deployment/cryptonote-nodejs-pool.service) to create the systemd service `/lib/systemd/system/cryptonote-nodejs-pool.service`
 Then enable and start the service with the following commands : 
-
+(This also works with coindaemon, but Im not having success if I add options: eg: Dynged --some-option --bind-ip 1.2.3.4)
 ```
 sudo systemctl enable cryptonote-nodejs-pool.service
 sudo systemctl start cryptonote-nodejs-pool.service
