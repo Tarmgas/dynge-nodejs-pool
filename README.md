@@ -132,6 +132,8 @@ sudo add-apt-repository ppa:chris-lea/redis-server
 sudo apt-get update
 sudo apt-get install redis-server
  ```
+ * Check if redis is running: `sudo systemctl status redis-server` enable manually if not.
+ 
 * libssl required for the node-multi-hashing module
   * For Ubuntu: `sudo apt-get install libssl-dev`
 
