@@ -13,7 +13,7 @@
         "base58-native": "*",
         "bignum": "*",
         "cli-color": "*",
-        "cryptoforknote-util": "git://github.com//Tarmgas/node-cryptoforknote-util.git",
+        "cryptoforknote-util": "git://github.com/Tarmgas/node-cryptoforknote-util.git",
         "cryptonight-hashing": "git://github.com/MoneroOcean/node-cryptonight-hashing.git",
         "multi-hashing": "git://github.com/clintar/node-multi-hashing.git#Nan-2.0", 
         "cryptonote-util": "git://github.com/clintar/node-cryptonote-util.git#Nan-2.0",
